@@ -25,8 +25,11 @@ window.onload = function() {
 		this.draw = function() {
 			ctxt.beginPath();
 			ctxt.arc(this.x, this.y, this.radius, 0, tau, false);
-			ctxt.strokeStyle = 'hsla(' + this.hue +',' + '100%,50%,50%)';
+			ctxt.strokeStyle = `hsla(${this.hue}, 100%, 50%, 50%)`;
+			ctxt.fillStyle = `hsla(${this.hue}, 100%, 50%, 25%)`;
+			ctxt.closePath();
 			ctxt.stroke();
+			ctxt.fill();
 		}
 
 		this.update = function() {
