@@ -1,0 +1,8 @@
+---
+ name: HTML5 Canvas tutorial demo
+ description: Implementation of canvas tutorial https://youtu.be/EO6OkltgudE
+ authors:
+   - Scott Bissett
+ normalize_css: no
+ load_type: d
+ ...
